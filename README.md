@@ -61,6 +61,21 @@ On Windows, the executable is configured with `windows_subsystem = "windows"` so
 
 For polished installers, use a packaging tool such as `cargo-bundle`, `cargo-packager`, or `cargo-dist`.
 
+## GitHub Releases
+
+The GitHub Actions workflow builds macOS, Windows, and Linux artifacts on every push and pull request. To publish a release, push a version tag:
+
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+The release job uploads:
+
+- `hidden-character-cleaner-macos.zip`
+- `hidden-character-cleaner-windows-x86_64.zip`
+- `hidden-character-cleaner-linux-x86_64.tar.gz`
+
 ## Output Formats
 
 The app can save cleaned output as:
