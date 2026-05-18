@@ -1,0 +1,15 @@
+[package]
+name = "hidden-character-cleaner"
+version = "1.0.0"
+edition = "2024"
+description = "Native desktop app for removing hidden Unicode characters from pasted text."
+license = "MIT"
+
+[dependencies]
+eframe = "0.34.2"
+rfd = "0.17.2"
+sys-locale = "0.3.2"
+unicode-general-category = "1.1.0"
+unicode-normalization = "0.1.25"
+webbrowser = "1.2.1"
+zip = { version = "8.6.0", default-features = false, features = ["deflate"] }
