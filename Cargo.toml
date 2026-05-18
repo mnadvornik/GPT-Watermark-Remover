@@ -1,6 +1,6 @@
 [package]
 name = "hidden-character-cleaner"
-version = "1.0.0"
+version = "1.0.1"
 edition = "2024"
 description = "Native desktop app for removing hidden Unicode characters from pasted text."
 license = "MIT"
